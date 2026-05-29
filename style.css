@@ -991,29 +991,3 @@ body {
         background: #425E68;
     }
 }
-/* ========== ФИКСЫ ДЛЯ ТЕЛЕФОНОВ ========== */
-@media (max-width: 480px) {
-    /* ФИКС ФОНА */
-    html, body {
-        background: #425E68 !important;
-    }
-    
-    .page-container {
-        background: #425E68;
-    }
-    
-    /* ТРЕТИЙ БЛОК - сдвигаем буквы МК вправо */
-    .program-mk {
-        left: 80px !important;
-    }
-    
-    /* ПЕРВЫЙ БЛОК - уменьшаем расстояние между фото и текстом */
-    .wedding-card .photo-frame {
-        margin-top: 130px;  /* было 152px, уменьшили */
-    }
-    
-    /* ВТОРОЙ БЛОК - сдвигаем текст чуть ниже */
-    .invitation-card .invitation-content {
-        top: 35px;  /* было 40px, чуть ниже */
-    }
-}
