@@ -890,13 +890,12 @@ body {
 }
 
 /* ========== ФИКС ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ========== */
-/* Отключаем все изменения размера на телефонах */
 html {
     background: #425E68;
 }
 
 body {
-    background: #425E68 !important;
+    /* background: #425E68 !important; ← УДАЛИТЕ ЭТУ СТРОКУ */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
