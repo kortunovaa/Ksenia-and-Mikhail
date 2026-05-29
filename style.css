@@ -991,3 +991,37 @@ body {
         background: #425E68;
     }
 }
+
+/* ========== МОБИЛЬНЫЙ ФИКС ========== */
+@media (max-width: 480px) {
+    body {
+        overflow-x: auto;
+        min-width: 393px;
+    }
+    
+    .page-container {
+        min-width: 393px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wedding-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wedding-card,
+    .invitation-card,
+    .program-card,
+    .location-card,
+    .dresscode-card,
+    .organizer-card,
+    .timer-card,
+    .final-card {
+        width: 393px;
+        margin: 0 auto;
+    }
+}
