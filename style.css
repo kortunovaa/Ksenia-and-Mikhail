@@ -971,3 +971,23 @@ body {
 .social-btn:hover {
     opacity: 0.8;
 }
+
+/* ФИКС ФОНА ДЛЯ ТЕЛЕФОНОВ - ВСТАВИТЬ В КОНЕЦ ФАЙЛА */
+html {
+    background: #425E68;
+}
+
+body {
+    background: #425E68 !important;
+    min-height: 100vh;
+}
+
+@media (max-width: 480px) {
+    html, body {
+        background: #425E68 !important;
+    }
+    
+    .page-container {
+        background: #425E68;
+    }
+}
