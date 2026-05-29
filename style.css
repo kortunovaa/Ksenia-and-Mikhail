@@ -152,7 +152,7 @@ body {
 .invitation-content {
     position: absolute;
     left: 18px;
-    top: 30px;
+    top: 40px;
     width: 357px;
     display: flex;
     flex-direction: column;
