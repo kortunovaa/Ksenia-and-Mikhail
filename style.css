@@ -972,3 +972,20 @@ body {
     opacity: 0.8;
 }
 
+@media (max-width: 480px) {
+    .wedding-card,
+    .invitation-card,
+    .program-card,
+    .location-card,
+    .dresscode-card,
+    .organizer-card,
+    .timer-card,
+    .final-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .wedding-block {
+        width: 100%;
+    }
+}
