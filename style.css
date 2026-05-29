@@ -889,13 +889,19 @@ body {
     opacity: 0.8;
 }
 
+/* ========== ДЛЯ ТЕЛЕФОНОВ - ОДНОТОННЫЙ ФОН ========== */
+@media (max-width: 480px) {
+    body {
+        background: #425E68 !important;
+    }
+}
+
 /* ========== ФИКС ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ========== */
 html {
     background: #425E68;
 }
 
 body {
-    /* background: #425E68 !important; ← УДАЛИТЕ ЭТУ СТРОКУ */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
