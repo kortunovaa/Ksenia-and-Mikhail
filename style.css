@@ -63,26 +63,6 @@ body {
     box-shadow: none;
 }
 
-.photo-frame {
-    position: relative;
-    width: 393px;
-    height: 511px;
-    overflow: hidden;
-    background: #e9e3da;
-    margin-top: 152px;
-}
-
-.wedding-photo {
-    width: 398px;
-    height: 516px;
-    position: relative;
-    left: -3px;
-    top: -4px;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-}
-
 .text-content {
     position: absolute;
     top: 0px;
@@ -887,6 +867,104 @@ body {
 
 .social-btn:hover {
     opacity: 0.8;
+}
+
+/* ========== НОВЫЙ ФРЕЙМ В ПЕРВОМ БЛОКЕ ========== */
+.new-photo-frame {
+    position: relative;
+    width: 393px;
+    height: 485px;
+    background: #829198;
+    overflow: hidden;
+     margin-top: 170px;   
+}
+
+.new-content-wrapper {
+    position: absolute;
+    width: 438px;
+    height: 471px;
+    left: -22px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 39px;
+}
+
+.new-text-section {
+    width: 379px;
+    height: 159px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.new-text-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.new-subtitle {
+    text-align: center;
+    color: #30424B;
+    font-size: 25px;
+    font-family: 'Wulkan Display', 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 53px;
+    text-shadow: 1px 1px 1px rgba(255, 247, 236, 1);
+    font-style: normal;
+}
+
+.new-title {
+    text-align: center;
+    color: #FFF7EC;
+    font-size: 45px;
+    font-family: 'Wulkan Display', 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 53px;
+    font-style: normal;
+}
+
+.new-dialogue {
+    width: 354px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-question {
+    width: 213px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Wulkan Display', 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 17px;
+    font-style: normal;
+}
+
+.new-answer {
+    width: 105px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Wulkan Display', 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 15px;
+    font-style: normal;
+}
+
+.new-bottom-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 278px;
+    object-fit: contain;
+    object-position: center center;
 }
 
 /* ========== ДЛЯ ТЕЛЕФОНОВ - ОДНОТОННЫЙ ФОН ========== */
