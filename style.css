@@ -182,7 +182,7 @@ body {
     text-transform: uppercase;
 }
 
-/* ========== ТРЕТИЙ БЛОК (ПРОГРАММА ДНЯ) ========== */
+/* ========== ТРЕТИЙ БЛОК (ПРОГРАММА ДНЯ) - НОВЫЙ ========== */
 .program-card {
     position: relative;
     width: 393px;
@@ -230,34 +230,32 @@ body {
     font-style: normal;
 }
 
-/* Правая колонка */
-.program-right {
+/* Левая колонка (только 17:00) */
+.program-left-new {
     position: absolute;
-    width: 150px;
-    height: 239px;
-    left: 223px;
-    top: 193px;
+    left: 10px;
+    top: 325px;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap: 120px;
+    align-items: center;
+    gap: 50px;
 }
 
-.program-item {
-    align-self: stretch;
+.program-item-left {
+    width: 150px;
+    text-align: right;
 }
 
-.program-time {
+.program-time-left {
     color: white;
     font-size: 30px;
     font-family: 'Wulkan Display', 'Playfair Display', serif;
     font-weight: 500;
-    line-height: 12px;
+    line-height: 20px;
     font-style: normal;
 }
 
-.program-event {
+.program-event-left {
     color: white;
     font-size: 20px;
     font-family: 'Wulkan Display', 'Playfair Display', serif;
@@ -266,22 +264,26 @@ body {
     font-style: normal;
 }
 
-/* Левая колонка */
-.program-left {
+/* Правая колонка (16:00 и 22:00) */
+.program-right-new {
     position: absolute;
-    width: 163px;
-    left: 10px;
-    top: 281px;
+    left: 223px;
+    top: 180px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-end;
-    gap: 120px;
+    align-items: flex-start;
+    gap: 218px;
+}
+
+/* Сдвигаем только блок 22:00 ниже */
+.program-right-new .program-item-right:last-child {
+    margin-top: 20px;
 }
 
 .program-item-right {
-    width: 150px;
-    text-align: right;
+    align-self: stretch;
 }
 
 .program-time-right {
@@ -289,8 +291,9 @@ body {
     font-size: 30px;
     font-family: 'Wulkan Display', 'Playfair Display', serif;
     font-weight: 500;
-    line-height: 12px;
+    line-height: 0px;
     font-style: normal;
+    margin-bottom: 30px;
 }
 
 .program-event-right {
@@ -302,19 +305,21 @@ body {
     font-style: normal;
 }
 
-/* Разделительная линия - вертикальная по центру */
-.program-line {
+/* Разделительная линия */
+.program-line-new {
     position: absolute;
-    width: 2px;
-    height: 400px;
-    left: 50%;
-    top: 52%;
-    transform: translate(calc(-50% + 1px), -50%);
-    background: white;
+    width: 463px;
+    height: 0px;
+    left: 197px;
+    top: 134px;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    outline: 2px white solid;
+    outline-offset: -1px;
 }
 
 /* Точки-кружочки */
-.program-dots {
+.program-dots-new {
     position: absolute;
     width: 34px;
     left: 181px;
@@ -323,20 +328,14 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 80px;
+    gap: 137px;
 }
 
-.dot {
+.dot-new {
     width: 14px;
     height: 14px;
     background: white;
     border-radius: 9999px;
-}
-
-.future-block-placeholder {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 /* ========== ЧЕТВЁРТЫЙ БЛОК (МЕСТО ПРОВЕДЕНИЯ) ========== */
